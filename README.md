@@ -1,4 +1,5 @@
-Testing task: Movies library
+Testing task: Movies library 🎥
+
 To start: run `npm run start`
 
 Based on and inspired with DDD ideas: separated Domain Layer, Application Layer and User Interface (Presentation) Layer.
