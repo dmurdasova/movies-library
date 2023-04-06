@@ -48,7 +48,7 @@ const repository: IMovieRepository = {
         addApiKey(url.searchParams);
         url.searchParams.append('page', page.toString());
 
-        // Let's emulate request waiting a little
+        // Let's emulate waiting for a response
         await new Promise((res) => {
             setTimeout(() => res(null), 1500);
         });
