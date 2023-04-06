@@ -1,0 +1,56 @@
+$body-width: 250px;
+$gap: 10px;
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .ant-card-body {
+        display: flex;
+        flex-grow: 1;
+    }
+}
+
+.ant-card .ant-card-head-title {
+    overflow: visible;
+    white-space: inherit;
+}
+
+.movie-title {
+    text-align: center;
+}
+
+.movie-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    min-width: $body-width;
+    width: $body-width;
+    gap: $gap;
+
+    p {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: end;
+    }
+}

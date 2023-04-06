@@ -1,0 +1,16 @@
+section.movie-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.movies-page-container__info-desc {
+    padding-top: 20px;
+}

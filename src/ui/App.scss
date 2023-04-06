@@ -1,0 +1,49 @@
+$gap: 15px;
+$white: #fff;
+$big-font: 24px;
+
+.header-content {
+    padding: 0;
+    text-align: center;
+    color: $white;
+    font-size: $big-font;
+}
+
+.filter-content {
+    padding: $gap;
+}
+
+.spinner-container {
+    background: rgba(0, 0, 0, 0.005);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.movies-content {
+    padding: 0 $gap;
+
+    &__container {
+        padding: $gap 0;
+        display: flex;
+        gap: $gap;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .movies-content {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .movies-content {
+        &__container {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
