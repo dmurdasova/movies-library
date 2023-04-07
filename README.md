@@ -1,4 +1,6 @@
-Testing task: Movies library 🎥
+Movies library 🎥
+
+Please, add your APP Secret key to variables.
 
 To start: run `npm run start`
 
